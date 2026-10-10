@@ -1,0 +1,16 @@
+name: Teste Automatizado do Projeto
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  testar-aplicacao:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Rodar script de testes
+        run: node teste.js

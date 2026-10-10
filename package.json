@@ -1,0 +1,9 @@
+{
+  "name": "projeto-palindromo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node servidor.js",
+    "test": "node teste.js"
+  }
+}
