@@ -1,6 +1,6 @@
 function ehPalindromo(texto) {
   if (!texto) return false;
-  const textoNormalizado = texto.replace(/[^a-z0-9]/g, '');
+  const textoNormalizado = texto.toLowerCase().replace(/[^a-z0-9]/g, '');
   const textoInvertido = textoNormalizado.split('').reverse().join('');
   return textoNormalizado === textoInvertido;
 }
